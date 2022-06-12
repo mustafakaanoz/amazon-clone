@@ -10,7 +10,6 @@
   min-width: 100px;
   z-index: 1;
   background-color: white;
-  cursor: pointer;
 }
 
 .product>img {
@@ -27,6 +26,7 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
   cursor: pointer;
+  padding: 10px;
 }
 
 .product__info {
@@ -41,4 +41,19 @@
 
 .product__rating {
   display: flex;
+}
+
+.product:hover {
+  transition: 110ms ease-in;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 6px gray;
+}
+
+.product>button:hover {
+  transition: 100ms ease-in;
+  transform: scale(1.08);
+}
+
+.product>button:active {
+  background-color: #a88734;
 }
